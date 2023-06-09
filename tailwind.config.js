@@ -8,6 +8,7 @@ module.exports = {
   theme: {
     // TODO: CAMBIAR A EXTEND
     fontSize: {
+      lg: "11px",
       xl: "17px",
       "2xl": "27px",
       "3xl": "34px",
@@ -25,6 +26,8 @@ module.exports = {
         // Gray
         navbarbg: "#E9E9E9",
         gray_navbar: "#939393",
+        // gray 20minago
+        gray_notif: "#A1A1A1",
       },
       height: {
         navbar: "89px",

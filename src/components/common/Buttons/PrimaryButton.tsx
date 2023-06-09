@@ -7,7 +7,7 @@ interface Props {
 const PrimaryButton: React.FC<Props> = ({text}) => {
   return (
     <button
-        className="text-2xl mt-10 w-full bg-primary hover:bg-primaryhover text-white border py-2 px-6 font-semibold text-md rounded-xl"
+        className="text-[16px] md:text-2xl mt-10 w-full bg-primary hover:bg-primaryhover text-white border py-4 px-6 font-semibold text-md rounded-xl"
     >
         {text}
     </button>
