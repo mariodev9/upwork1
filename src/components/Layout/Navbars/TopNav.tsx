@@ -5,7 +5,7 @@ import imagen from "../../../../public/images/Illustration.jpg"
 
 // Avatar props --> urlImage
 const Avatar = () => (
-  <Image className='rounded-full w-[28px] h-[28px] md:w-[48px] md:h-[48px] bg-red-400' src={imagen}  alt='avatar' />
+  <Image className='rounded-full w-[28px] h-[28px] md:w-[48px] md:h-[48px] ' src={imagen}  alt='avatar' />
 )
 
 const TopNav = () => {
