@@ -16,14 +16,21 @@ interface NavLinkComponentProps  {
     const router = useRouter()
     const [isHover, setIsHover] = useState(false)
 
+    const handleClick = () => {
+      router.push(navlinkProps.url)
+    }
+
+    const isActive = navlinkProps.url === router.asPath 
+
     return (
     <motion.div
         onHoverStart={() => setIsHover(true)}
         onHoverEnd={() => setIsHover(false)}
-        className='cursor-pointer border-t-4 hover:border-primary flex flex-col items-center justify-center text-gray_navbar hover:text-black'
-        onClick={()=> router.push(navlinkProps.url)}
+        style={{borderTop: navlinkProps.url === router.asPath ? "3px solid" : "none", borderColor: "#1D90F4", color: isActive ? "#000" : "gray_navbar" }}
+        className='cursor-pointer flex flex-col items-center justify-center text-gray_navbar hover:text-black'
+        onClick={()=> handleClick() }
     >
-        {navlinkProps.ShowIcon(isHover)}
+       {navlinkProps.ShowIcon(isActive ? isActive : isHover)}
         <h2 className='text-[10px] md:text-navItem font-medium'>{navlinkProps.title}</h2>
     </motion.div >
   )
