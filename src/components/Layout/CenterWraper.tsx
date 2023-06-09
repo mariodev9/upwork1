@@ -4,11 +4,11 @@ interface Props {
     children: JSX.Element
 }
 
- const Layout:React.FC<Props> = ({children}) => {
+ const CenterWraper:React.FC<Props> = ({children}) => {
   return (
     <div className='flex justify-center'>
         <div className='container py-10 flex justify-center'>
-            <div className='flex flex-col items-center'>
+            <div className='flex flex-col items-center px-5 w-[700px]'>
                 {children}
             </div>
         </div>
@@ -16,4 +16,4 @@ interface Props {
   )
 }
 
-export default Layout
+export default CenterWraper

@@ -13,7 +13,7 @@ interface Props {
 export const CustomInput:React.FC<Props> = ({ name, label, register, required, type, placeholder}) => {
 
   return (
-    <div className='bg-bginput px-4 py-3 rounded-xl '>
+    <div className='bg-bginput px-4 py-3 rounded-xl w-full'>
     <label htmlFor={name} className="text-label font-semibold">{label}</label>
     <input 
         className="bg-bginput font-semibold w-full rounded text-black focus:outline-none" 

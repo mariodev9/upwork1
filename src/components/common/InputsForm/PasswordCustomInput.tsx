@@ -12,7 +12,7 @@ export const PasswordCustomInput:React.FC<Props> = ({ name, label, register, req
     const [showPassword, setShowPassword] = useState<boolean>(false)
 
   return (
-    <div className='flex items-center justify-between bg-bginput px-4 py-3 rounded-xl '>
+    <div className='flex items-center justify-between bg-bginput px-4 py-3 rounded-xl w-full'>
     <div className='flex-1'>
         <label htmlFor={name} className="text-label font-semibold">{label}</label>
         <input 
