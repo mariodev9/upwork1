@@ -15,7 +15,7 @@ interface NavLinkProps {
         ShowIcon: (isHover: boolean) => {
             return <HomeIcon isHover={isHover} />;
         },
-        url: "/Personal",
+        url: "/",
     },
     {
         title: "Personal",

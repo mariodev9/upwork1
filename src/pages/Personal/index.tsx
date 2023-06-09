@@ -18,7 +18,7 @@ const Categories = [
 const PersonalPage: NextPage = () => {
     return (
       <Layout>
-          <div className='mt-20 mb-24 md:mt-24 px-10'>
+          <div className='mt-20 mb-28 md:mt-24 px-10'>
             <h1 className='py-4 text-center md:text-start text-3xl font-semibold'>Personal</h1>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-6">
               {/* Item */}
