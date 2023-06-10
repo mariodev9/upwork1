@@ -2,11 +2,12 @@ import {useEffect, useState} from 'react'
 import { CustomInput } from '@/components/common/InputsForm/CustomInput'
 import { NextPage } from 'next'
 import Head from 'next/head'
-import { useForm, useFormState, useWatch, Controller } from "react-hook-form";
+import { useForm} from "react-hook-form";
 import Link from 'next/link';
 import { PasswordCustomInput } from '@/components/common/InputsForm/PasswordCustomInput';
 import { HeaderPageAuth } from '@/components/common/HeaderPageAuth';
 import CenterWraper from '@/components/Layout/CenterWraper';
+import axios from 'axios';
 
  const SignupPage: NextPage = () => {
 
@@ -18,13 +19,10 @@ import CenterWraper from '@/components/Layout/CenterWraper';
         formState: { errors }
       } = useForm();
 
-
       const onSubmit = async (data:any) => {
-        console.log(data, "Information Data");
+        // SignUp Api
       };
 
-
-      
   return (
     <>
         <Head>

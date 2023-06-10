@@ -7,6 +7,7 @@ import { useForm } from 'react-hook-form'
 import Link from 'next/link'
 import { HeaderPageAuth } from '@/components/common/HeaderPageAuth'
 import CenterWraper from '@/components/Layout/CenterWraper'
+import axios from "axios"
 
 const LoginPage: NextPage = () => {
 
@@ -19,7 +20,16 @@ const LoginPage: NextPage = () => {
       } = useForm();
 
     const onSubmit = async (data:any) => {
-        console.log(data, "Information Data");
+    axios.post('https://showcase-api-8j7x.onrender.com/login', {
+    email: data.email,
+    pwd: data.password,
+    })
+    .then(function (response) {
+        console.log(response.data);
+    })
+    .catch(function (error) {
+        console.log(error);
+    });
       };
 
     return (
@@ -48,7 +58,7 @@ const LoginPage: NextPage = () => {
 
                         {/* Password */}
                         <PasswordCustomInput
-                            name="newpassword"
+                            name="password"
                             label="Password"
                             register={register} 
                             required={true} 
