@@ -9,7 +9,7 @@ export default function Home() {
     <main
     className='flex w-full h-screen justify-center items-center flex-col gap-10'
     >
-        <Link href={"/Personal"}>Personal</Link>
+        <Link href={"/Home"}>Go to Home</Link>
         <Link href={"/Welcome"}>Welcome Page</Link>
         <Link href={"/Signup"}>Signup Page</Link>
         <Link href={"/Login"}>Login Page</Link>
