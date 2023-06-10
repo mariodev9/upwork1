@@ -35,7 +35,7 @@ const Notification:React.FC<NotificationProps> = ({description, datetime, read})
             <div>
                 <p className='mb-2'>Loreum ipsum is simply dummy text of the printing 
                 and typesetting industry. Lorem Ipsum has been 
-                the industry's standard dummy text ever since the 
+                the industre standard dummy text ever since the 
                 1500s
                 </p>
                 <p className='text-gray_notif'>20min ago</p>

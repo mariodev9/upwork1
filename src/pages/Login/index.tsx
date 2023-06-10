@@ -20,16 +20,17 @@ const LoginPage: NextPage = () => {
       } = useForm();
 
     const onSubmit = async (data:any) => {
-    axios.post('https://showcase-api-8j7x.onrender.com/login', {
-    email: data.email,
-    pwd: data.password,
-    })
-    .then(function (response) {
-        console.log(response.data);
-    })
-    .catch(function (error) {
-        console.log(error);
-    });
+        // axios.post('https://showcase-api-8j7x.onrender.com/login', {
+        // email: data.email,
+        // pwd: data.password,
+        // })
+        // .then(function (response) {
+        //     console.log(response.data);
+        // })
+        // .catch(function (error) {
+        //     console.log(error);
+        // });
+
       };
 
     return (
